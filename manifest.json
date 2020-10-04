@@ -9,11 +9,18 @@
         "128": "images/icon_128.png"
     },
     "permissions": [
+        "background",
         "storage",
         "tabs"
     ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
     "browser_action": {
-        "default_popup": "popup.html",
+        "default_popup": "popup/popup.html",
         "default_icon": "images/icon_m.png"
     },
     "content_scripts": [
@@ -22,12 +29,8 @@
                 "https://beef.center.kobe-u.ac.jp/*"
             ],
             "js": [
-                "content_script.js"
+                "content/content_script.js"
             ]
         }
-    ],
-    "background": {
-        "scripts": "event/ event_page.js",
-        "persistent": "false"
-    }
+    ]
 }

@@ -1,0 +1,9 @@
+body {
+  width: 100px;
+  height: 240px;
+}
+
+.selected-group-item > form {
+    display: flex;
+    justify-content: space-between;
+}
