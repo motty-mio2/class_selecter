@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "moodle class selecter",
+    "name": "Beef class selecter",
     "description": "神戸大学 LMS BEEF 上で授業の表示数を調整する。",
     "version": "0.9",
     "icons": {
@@ -10,8 +10,10 @@
     },
     "permissions": [
         "background",
+        "contextMenus",
         "storage",
-        "tabs"
+        "tabs",
+        "*://kym-web.ofc.kobe-u.ac.jp/*"
     ],
     "background": {
         "scripts": [
@@ -21,7 +23,8 @@
     },
     "browser_action": {
         "default_popup": "popup/popup.html",
-        "default_icon": "images/icon_m.png"
+        "default_icon": "images/icon_m.png",
+        "default_title": "hoge hoge hoge hoge"
     },
     "content_scripts": [
         {
